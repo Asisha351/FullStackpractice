@@ -1,0 +1,24 @@
+<html>
+    <body>
+        Total price: <p id="totprice"> 50 </p> <br/>
+        <button onclick="dec"> - </button>
+        <input type="text" id="quan" value="1"></br>
+        <button onclick="inc"> + </button>
+
+        <script>
+            function inc(){
+                const ip =document.getElementById("quan").value;
+                ip++;
+                document.getElementById("quan").value = ip;
+            }
+            function dec(){
+                const ip =document.getElementById("quan").value;
+                if(ip > 1){
+                    ip--;
+                    document.getElementById("quan").value = ip;
+                    document.getElementById("totprice").innerHTML = 50 * ip;
+                }
+            }
+        </script>
+    </body>
+</html>
