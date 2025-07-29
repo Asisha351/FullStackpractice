@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
     <head>
         <style>
@@ -41,4 +42,49 @@
             }
         </script>
     </body>
+=======
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(198, 128, 226);
+                width:100%;
+                height:100%;
+            }
+            #content {
+                display:flex;
+                position: absolute;
+                top: 50%;       
+                left: 40%;
+            }
+            #content input {
+                border: 3px solid rgb(127, 47, 121);
+                font-family: Cambria;
+                width: 200px;
+                height: 30px;
+                margin: 10px;
+            }
+            #content button {
+                border: 3px solid rgb(127, 47, 121);
+                font-family: Cambria;
+                width: 100px;
+                height: 30px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <input id="name" type="text" id="uname" placeholder="Enter name">
+            <button onclick="nextpage()"> Login </button>
+        </div>
+        <script>
+            function nextpage() {
+                let uname = document.getElementById("uname").value;
+                sessionStorage.setItem("username", uname);
+                window.location.href = "dashboard.html";
+            }
+        </script>
+    </body>
+>>>>>>> 1eb597858a70c0605b3899a2a41327f7b4251fe6
 </html>
